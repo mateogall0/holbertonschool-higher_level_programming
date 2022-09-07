@@ -7,6 +7,6 @@ if __name__ == '__main__':
         print('0 arguments.')
         exit()
     print('{} arguments:'.format(argc))
-    for i in sys.argv:
-        print('{:n}: {:s}'.format(j, i))
+    for i in range(1, argc):
+        print('{:n}: {:s}'.format(j, sys.argv[i]))
         j += 1
