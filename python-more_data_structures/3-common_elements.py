@@ -7,5 +7,5 @@ def common_elements(set_1, set_2):
     for i in l1:
         for j in l2:
             if i == j:
-                new.append(l1[i])
+                new.append(i)
     return dict.fromkeys(new)
