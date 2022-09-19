@@ -1,8 +1,5 @@
 #!/usr/bin/python3
+"""Square"""
 class Square:
-    """
-    Square Class
-    Attributes:
-        __dict__ (dict): dictionary
-    """
+    """Square"""
     __dict__ = {}
