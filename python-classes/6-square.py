@@ -2,9 +2,6 @@
 """Square"""
 
 
-from queue import Empty
-
-
 class Square():
     """Square"""
     __size = 0
