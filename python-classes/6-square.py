@@ -2,9 +2,6 @@
 """Square"""
 
 
-from turtle import pos
-
-
 class Square():
     """Square"""
     __size = 0
