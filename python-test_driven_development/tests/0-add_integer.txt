@@ -1,0 +1,26 @@
+The ``0-add_integer.py`` module
+======================
+
+Using ``add_integer``
+-------------------
+>>> add = __import__('0-add_integer').add_integer
+
+    >>> add(1, 2)
+    3
+    >>> add(1, 6.0)
+    7
+    >>> add(2.0, 3.0)
+    5
+    >>> add(6.0, 1)
+    7
+    >>> add(12345234523452, 1)
+    12345234523453
+    >>> add('hbtn', 1)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    >>> add(1, 'hbtn')
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+    >>> add([1], 1)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
