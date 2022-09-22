@@ -1,5 +1,7 @@
 >>> smn = __import__('3-say_my_name').say_my_name
 
+    >>> smn('John', 'Doe')
+    My name is John Doe
     >>> smn(123)
     Traceback (most recent call last):
     TypeError: first_name must be a string
