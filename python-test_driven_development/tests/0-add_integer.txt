@@ -29,3 +29,9 @@ Using ``add_integer``
     >>> add(float('Nan'))
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
+    >>> add(1000e1000)
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+    >>> add()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
