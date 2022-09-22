@@ -26,3 +26,9 @@ Using ``add_integer``
     TypeError: a must be an integer
     >>> add(0, 0)
     0
+    >>> add(None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    >>> add(1, None)
+    Traceback (most recent call last):
+    TypeError: b must be an integer
