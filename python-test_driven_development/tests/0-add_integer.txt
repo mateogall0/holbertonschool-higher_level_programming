@@ -24,3 +24,5 @@ Using ``add_integer``
     >>> add([1], 1)
     Traceback (most recent call last):
     TypeError: a must be an integer
+    >>> add(0, 0)
+    0
