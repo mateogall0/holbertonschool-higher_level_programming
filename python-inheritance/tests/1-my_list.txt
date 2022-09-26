@@ -7,3 +7,9 @@
 
         >>> ml.print_sorted()
         [1, 2]
+        >>> print(ml)
+        [2, 1]
+
+    >>> ml = mylist()
+        >>> ml.print_sorted()
+        []
