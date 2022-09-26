@@ -13,3 +13,10 @@
     >>> ml = mylist()
         >>> ml.print_sorted()
         []
+    >>> ml = mylist()
+        >>> ml.append(2)
+
+        >>> ml.append(-1)
+
+        >>> ml.print_sorted()
+        [-1, 2]
