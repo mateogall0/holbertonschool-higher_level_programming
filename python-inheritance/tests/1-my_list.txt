@@ -1,9 +1,9 @@
->>> my_list = __import__('1-my_list').MyList
+>>> mylist = __import__('1-my_list').MyList
 
-    >>> ml = my_list
-    >>> ml.append(1)
-    >>> ml.append(2)
-    >>> ml.append(3)
-    >>> ml.print_sorted()
-    Traceback (most recent call last):
-    TypeError: print_sorted() missing 1 required positional argument: 'self'
+    >>> ml = mylist()
+        >>> ml.append(2)
+
+        >>> ml.append(1)
+
+        >>> ml.print_sorted()
+        [1, 2]
