@@ -1,0 +1,13 @@
+>>> ps = __import__('4-print_square').print_square
+
+    >>> ps(0)
+    
+    >>> ps(-123)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+    >>> ps(0.0)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+    >>> ps()
+    Traceback (most recent call last):
+    TypeError: print_square() missing 1 required positional argument: 'size'

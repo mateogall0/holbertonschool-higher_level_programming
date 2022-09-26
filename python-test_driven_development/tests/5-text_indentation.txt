@@ -1,0 +1,19 @@
+>>> t = __import__('5-text_indentation').text_indentation
+
+    >>> t(123)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+    >>> t('hi?asdfasdfsadf.as')
+    hi?
+    <BLANKLINE>
+    asdfasdfsadf.
+    <BLANKLINE>
+    as
+    >>> t('asdfasdf\n\n123')
+    asdfasdf
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+    123
