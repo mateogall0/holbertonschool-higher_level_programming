@@ -3,5 +3,5 @@
 
 
 def class_to_json(obj):
-    jString = json.dumps(obj)
+    jString = str(obj)
     return jString
