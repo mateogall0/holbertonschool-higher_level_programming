@@ -18,7 +18,7 @@ if __name__ == '__main__':
     a = []
     try:
         a = lfile('add_item.json')
-    except Exception:
+    except:
         pass
     for i in range(1, len(sys.argv)):
         a.append(sys.argv[i])
