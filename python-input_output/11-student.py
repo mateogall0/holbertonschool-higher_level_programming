@@ -20,4 +20,4 @@ class Student:
         return d
 
     def reload_from_json(self, json):
-        pass
+        self.__dict__ = json
