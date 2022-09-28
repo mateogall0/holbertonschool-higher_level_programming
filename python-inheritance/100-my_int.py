@@ -12,6 +12,9 @@ class MyInt(Int):
     def __init__(self, num):
         self.__num = num
 
+    def __str__(self):
+        return f'{self.__num}'
+
     def __eq__(self, other):
         if self.__num == other:
             return False
