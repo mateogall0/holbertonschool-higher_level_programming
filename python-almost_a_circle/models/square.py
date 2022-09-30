@@ -53,3 +53,11 @@ class Square(Rectangle):
                 self.y = args[3]
             else:
                 break
+
+    def to_dictionary(self):
+        """Class to dictionary function"""
+        id = self.id
+        size = self.width
+        x = self.x
+        y = self.y
+        return {'id': id, 'size': size, 'x': x, 'y': y}
