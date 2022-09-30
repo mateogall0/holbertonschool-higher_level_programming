@@ -20,6 +20,6 @@ class Base:
     def to_json_string(list_dictionaries):
         """Class to json_string"""
         if list_dictionaries is None:
-            return []
+            return '[]'
 
         return json.dumps(list_dictionaries)
