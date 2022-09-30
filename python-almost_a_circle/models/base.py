@@ -40,3 +40,10 @@ class Base:
                     j += 1
                 s += ']'
             f.write(s)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """From json string function"""
+        if json_string is None:
+            return []
+        return json.loads(json_string)
