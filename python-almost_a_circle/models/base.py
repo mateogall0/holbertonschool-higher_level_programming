@@ -52,5 +52,5 @@ class Base:
     def create(cls, **dictionary):
         """Create method"""
         o = cls(1, 1)
-        o.update(dictionary)
+        o.update(**dictionary)
         return o
