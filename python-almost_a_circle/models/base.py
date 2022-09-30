@@ -51,6 +51,9 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Create method"""
-        o = cls(1, 1)
+        if cls.__name__ == 'Square':
+            o = cls(1)
+        else:
+            o = cls(1, 1)
         o.update(**dictionary)
         return o
