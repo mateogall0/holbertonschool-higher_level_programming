@@ -64,8 +64,11 @@ class Base:
         a = []
         j = []
         file_name = cls.__name__ + '.json'
-        with open(file_name, 'r') as f:
-            j = cls.from_json_string(f.read())
-        for i in j:
-            a.append(cls.create(**i))
+        try:
+            with open(file_name, 'r') as f:
+                j = cls.from_json_string(f.read())
+            for i in j:
+                a.append(cls.create(**i))
+        except Exception:
+            return []
         return a
