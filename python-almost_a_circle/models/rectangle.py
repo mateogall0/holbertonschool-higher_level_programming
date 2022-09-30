@@ -96,8 +96,21 @@ class Rectangle(Base):
         height = self.height
         return f'[Rectangle] ({id}) {x}/{y} - {width}/{height}'
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update class"""
+        if len(args) == 0:
+            for i in kwargs:
+                if i == 'id':
+                    self.id = kwargs[i]
+                if i == 'x':
+                    self.x = kwargs[i]
+                if i == 'y':
+                    self.y = kwargs[i]
+                if i == 'width':
+                    self.width = kwargs[i]
+                if i == 'height':
+                    self.height = kwargs[i]
+            return
         for i in range(len(args)):
             if (i == 0):
                 self.id = args[0]
