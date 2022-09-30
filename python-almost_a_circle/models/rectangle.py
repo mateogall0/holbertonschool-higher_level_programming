@@ -124,3 +124,12 @@ class Rectangle(Base):
                 self.y = args[4]
             else:
                 break
+
+    def to_dictionary(self):
+        """Function class to dictionary"""
+        id = self.id
+        width = self.width
+        height = self.height
+        x = self.x
+        y = self.y
+        return {'id': id, 'width': width, 'height': height, 'x': x, 'y': y}
