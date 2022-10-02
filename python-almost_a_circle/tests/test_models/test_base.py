@@ -8,7 +8,7 @@ from models.base import Base
 
 class TestStringMethods(unittest.TestCase):
     """Test String Methods"""
-    def t0(self):
+    def test_0(self):
         o = Base()
         self.assertEqual(o.id, 1)
 
