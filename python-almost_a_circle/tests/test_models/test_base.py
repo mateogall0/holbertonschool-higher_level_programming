@@ -6,11 +6,21 @@ import unittest
 from models.base import Base
 
 
-class TestStringMethods(unittest.TestCase):
-    """Test String Methods"""
+class testsNumber0(unittest.TestCase):
+    """Tests number 0"""
+    def setUp(self):
+        self.base1 = Base()
+
     def test_0(self):
-        o = Base()
-        self.assertEqual(o.id, 1)
+        self.assertEqual(self.base1.id, 1)
+
+
+class testsNumber1(unittest.TestCase):
+    """Tests number 1"""
+    def setUp(self):
+        self.base1 = Base(56)
+    def test_1(self):
+        self.assertEqual(self.base1.id, 56)
 
 if __name__ == '__main__':
     unittest.main()
