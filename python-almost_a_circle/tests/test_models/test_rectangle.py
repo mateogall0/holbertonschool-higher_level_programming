@@ -15,6 +15,7 @@ class testsNumber0(unittest.TestCase):
         self.assertEqual(self.r1.width, 1)
         self.assertEqual(self.r1.height, 2)
         self.r2 = Rectangle(1, 2, 3, 4, 5)
+        self.assertEqual(self.r2.height, 2)
     def test_1(self):
         with self.assertRaises(TypeError):
             Rectangle("1", 2)
@@ -24,6 +25,18 @@ class testsNumber0(unittest.TestCase):
             Rectangle(1, 2, "3")
         with self.assertRaises(TypeError):
             Rectangle(1, 2, 3, "4")
+        with self.assertRaises(ValueError):
+            Rectangle(-1, 2)
+        with self.assertRaises(ValueError):
+            Rectangle(1, -2)
+        with self.assertRaises(ValueError):
+            Rectangle(0, 2)
+        with self.assertRaises(ValueError):
+            Rectangle(1, 2, -3)
+        with self.assertRaises(ValueError):
+            Rectangle(1, 2, 3, -4)
+        
+        
         
 if __name__ == '__main__':
     unittest.main()
