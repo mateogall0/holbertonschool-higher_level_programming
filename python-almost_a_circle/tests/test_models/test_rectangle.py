@@ -10,7 +10,10 @@ class testsNumber0(unittest.TestCase):
     """Test of Base() for assigning
     automatically an ID exists"""
     def test_0(self):
-        self.assertEqual(Rectangle(1, 2).id, 13)
+        self.r1 = Rectangle(1, 2)
+        self.assertEqual(self.r1.id, 13)
+        self.assertEqual(self.r1.width, 1)
+        self.assertEqual(self.r1.height, 2)
 
 if __name__ == '__main__':
     unittest.main()
