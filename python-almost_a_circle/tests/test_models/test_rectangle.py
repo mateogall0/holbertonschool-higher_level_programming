@@ -50,8 +50,6 @@ class TestsNumber1(unittest.TestCase):
         self.r4.y = 1
         self.assertTrue(self.r4.display, '\n #\n #')
         self.assertEqual(self.r4.to_dictionary(), {'id': 14, 'width': 1, 'height': 2, 'x': 1, 'y': 1})
-        self.r4.update(89)
-        self.assertEqual(self.r4.width, 89)
 
 if __name__ == '__main__':
     unittest.main()
