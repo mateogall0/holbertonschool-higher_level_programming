@@ -43,6 +43,12 @@ class testsNumber1(unittest.TestCase):
         self.assertEqual(Base().to_json_string([]), '[]')
     def test_4(self):
         self.assertEqual(Base().to_json_string([ { 'id': 12 }]), '[{"id": 12}]')
+    def test_5(self):
+        self.assertEqual(Base().from_json_string(None), [])
+    def test_6(self):
+        self.assertEqual(Base().from_json_string("[]"), [])
+    def test_7(self):
+        self.assertEqual(Base().from_json_string('[{ "id": 89 }]'), [{'id': 89}])
 
 if __name__ == '__main__':
     unittest.main()
