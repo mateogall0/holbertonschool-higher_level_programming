@@ -34,9 +34,9 @@ class testsNumber0(unittest.TestCase):
 class testsNumber1(unittest.TestCase):
     """Tests number 1"""
     def setUp(self):
-        self.base1 = Base(56)
+        self.base1 = Base(89)
     def test_1(self):
-        self.assertEqual(self.base1.id, 56)
+        self.assertEqual(self.base1.id, 89)
 
 if __name__ == '__main__':
     unittest.main()
