@@ -7,7 +7,8 @@ from models.base import Base
 
 
 class testsNumber0(unittest.TestCase):
-    """Tests number 0"""
+    """Test of Base() for assigning
+    automatically an ID exists"""
     def setUp(self):
         self.base1 = Base()
 
