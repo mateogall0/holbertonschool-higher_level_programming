@@ -11,7 +11,7 @@ class testsNumber0(unittest.TestCase):
     automatically an ID exists"""
     def test_0(self):
         self.r1 = Rectangle(1, 2)
-        self.assertEqual(self.r1.id, 14)
+        self.assertEqual(self.r1.id, 15)
         self.assertEqual(self.r1.width, 1)
         self.assertEqual(self.r1.height, 2)
         self.r2 = Rectangle(1, 2, 3, 4, 5)
@@ -40,8 +40,18 @@ class testsNumber0(unittest.TestCase):
         
 class TestsNumber1(unittest.TestCase):
     def test_0(self):
-         self.r3 = Rectangle(3, 3)
-         self.assertEqual(self.r3.area(), 9)
-        
+        self.r3 = Rectangle(3, 3)
+        self.r4 = Rectangle(1, 2)
+        self.assertEqual(self.r3.area(), 9)
+        self.assertEqual(self.r3.__str__(), '[Rectangle] (13) 0/0 - 3/3')
+        self.assertTrue(self.r4.display, '#\n#')
+        self.r4.x = 1
+        self.assertTrue(self.r4.display, ' #\n #')
+        self.r4.y = 1
+        self.assertTrue(self.r4.display, '\n #\n #')
+        self.assertEqual(self.r4.to_dictionary(), {'id': 14, 'width': 1, 'height': 2, 'x': 1, 'y': 1})
+        self.r4.update(89)
+        self.assertEqual(self.r4.width, 89)
+
 if __name__ == '__main__':
     unittest.main()
