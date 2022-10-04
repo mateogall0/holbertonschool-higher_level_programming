@@ -5,13 +5,25 @@
 import unittest
 from models.rectangle import Rectangle
 
+class TestUpdate(unittest.TestCase):
+    def test_0(self):
+        self.r1 = Rectangle(75, 62)
+        self.r1.update()
+        self.assertEqual(self.r1.id, 17)
+        self.r1.update(89)
+        self.assertEqual(self.r1.id, 89)
+        self.r1.update(89, 1)
+        self.assertEqual(self.r1.id, 89)
+        self.assertEqual(self.r1.width, 1)
+        
+
 
 class testsNumber0(unittest.TestCase):
     """Test of Base() for assigning
     automatically an ID exists"""
     def test_0(self):
         self.r1 = Rectangle(1, 2)
-        self.assertEqual(self.r1.id, 19)
+        self.assertEqual(self.r1.id, 20)
         self.assertEqual(self.r1.width, 1)
         self.assertEqual(self.r1.height, 2)
         self.r2 = Rectangle(1, 2, 3, 4, 5)
@@ -43,8 +55,8 @@ class TestsNumber1(unittest.TestCase):
         self.r3 = Rectangle(3, 3)
         self.r4 = Rectangle(1, 2)
         self.assertEqual(self.r3.area(), 9)
-        self.assertEqual(self.r3.__str__(), '[Rectangle] (17) 0/0 - 3/3')
-        self.assertEqual(self.r4.to_dictionary(), {'id': 18, 'width': 1, 'height': 2, 'x': 0, 'y': 0})
+        self.assertEqual(self.r3.__str__(), '[Rectangle] (18) 0/0 - 3/3')
+        self.assertEqual(self.r4.to_dictionary(), {'id': 19, 'width': 1, 'height': 2, 'x': 0, 'y': 0})
 
 class TestDisplay(unittest.TestCase):
     def test_0(self):
