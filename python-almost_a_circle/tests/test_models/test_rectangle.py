@@ -48,13 +48,13 @@ class TestsNumber1(unittest.TestCase):
 
 class TestDisplay(unittest.TestCase):
     def setUp(self):
-        self.rd1 = Rectangle(2, 1, 0 ,0)
-        self.rd2 = Rectangle(1, 1, 1, 0)
-        self.rd3 = Rectangle(1, 2, 0, 1)
-        self.rd4 = Rectangle(2, 2, 1, 1)
+        rd2 = Rectangle(1, 1, 1, 0)
+        rd3 = Rectangle(1, 2, 0, 1)
+        rd4 = Rectangle(2, 2, 1, 1)
 
     def test_0(self):
-        self.assertEqual(self.rd1.display(), None) 
+        rd1 = Rectangle(2, 1, 0 ,0)
+        self.assertEqual(rd1.display(), None) 
 
 if __name__ == '__main__':
     unittest.main()
