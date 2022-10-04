@@ -43,7 +43,8 @@ class AllTests(unittest.TestCase):
         self.assertEqual(self.s5.__str__(), '[Square] (26) 0/0 - 2')
         self.assertEqual(self.s5.to_dictionary(), {'id': 26, 'size': 2, 'x': 0, 'y': 0})
         def test_2(self):
-            self.s6 = Square.create(**{ 'id': 89 })
+            self.s6 = Square.create(**{ 'id': 89, 'size': 1 })
+            self.assertEqual(self.s6.size, 1)
             self.assertEqual(self.s6.id, 89)
 
 
