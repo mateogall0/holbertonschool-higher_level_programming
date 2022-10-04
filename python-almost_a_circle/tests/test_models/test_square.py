@@ -19,6 +19,8 @@ class AllTests(unittest.TestCase):
         self.s2 = Square(1)
         self.assertEqual(self.s2.id, 23)
         self.assertEqual(self.s2.size, 1)
+        self.s3 = Square(1, 2, 3)
+        self.assertEqual(self.s3.id, 24)
 
 
 if __name__ == '__main__':
