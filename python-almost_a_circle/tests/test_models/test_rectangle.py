@@ -57,6 +57,8 @@ class TestsNumber1(unittest.TestCase):
         self.assertEqual(self.r3.area(), 9)
         self.assertEqual(self.r3.__str__(), '[Rectangle] (19) 0/0 - 3/3')
         self.assertEqual(self.r4.to_dictionary(), {'id': 20, 'width': 1, 'height': 2, 'x': 0, 'y': 0})
+        self.assertEqual(self.r4.save_to_file(None), None)
+        self.assertEqual(self.r4.save_to_file([]), None)
 
 class TestDisplay(unittest.TestCase):
     def test_0(self):
