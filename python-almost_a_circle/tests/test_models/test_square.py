@@ -19,8 +19,29 @@ class AllTests(unittest.TestCase):
         self.s2 = Square(1)
         self.assertEqual(self.s2.id, 23)
         self.assertEqual(self.s2.size, 1)
-        self.s3 = Square(1, 2, 3)
+        self.s3 = Square(1, 2)
         self.assertEqual(self.s3.id, 24)
+        self.s4 = Square(1, 2, 3)
+        self.assertEqual(self.s4.id, 25)
+        self.s4 = Square(1, 2, 3, 4)
+        self.assertEqual(self.s4.id, 4)
+        with self.assertRaises(TypeError):
+            Square("1")
+        with self.assertRaises(TypeError):
+            Square(1, "2")
+        with self.assertRaises(TypeError):
+            Square(1, 2, "3")
+        with self.assertRaises(ValueError):
+            Square(-1)
+        with self.assertRaises(ValueError):
+            Square(1, -2)
+        with self.assertRaises(ValueError):
+            Square(1, 2, -3)
+        with self.assertRaises(ValueError):
+            Square(0)
+        self.s5 = Square(2)
+        self.assertEqual(self.s5.__str__(), '[Square] (26) 0/0 - 2')
+        self.assertEqual(self.s5.to_dictionary(), {'id': 26, 'size': 2, 'x': 0, 'y': 0})
 
 
 if __name__ == '__main__':
