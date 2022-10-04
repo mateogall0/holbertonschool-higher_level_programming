@@ -47,14 +47,18 @@ class TestsNumber1(unittest.TestCase):
         self.assertEqual(self.r4.to_dictionary(), {'id': 18, 'width': 1, 'height': 2, 'x': 0, 'y': 0})
 
 class TestDisplay(unittest.TestCase):
-    def setUp(self):
-        rd2 = Rectangle(1, 1, 1, 0)
-        rd3 = Rectangle(1, 2, 0, 1)
-        rd4 = Rectangle(2, 2, 1, 1)
-
     def test_0(self):
         rd1 = Rectangle(2, 1, 0 ,0)
-        self.assertEqual(rd1.display(), None) 
+        self.assertEqual(rd1.display(), '##\n') 
+    def test_1(self):
+        rd2 = Rectangle(1, 1, 1, 0)
+        self.assertEqual(rd2.display(), ' #\n')
+    def test_2(self):
+        rd3 = Rectangle(1, 2, 0, 1)
+        self.assertEqual(rd3.display(), '\n#\n#\n')
+    def test_3(self):
+        rd4 = Rectangle(2, 2, 1, 1)
+        self.assertEqual(rd4.display(), '\n ##\n ##\n')
 
 if __name__ == '__main__':
     unittest.main()
