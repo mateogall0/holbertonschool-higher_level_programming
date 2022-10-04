@@ -49,6 +49,12 @@ class TestCreate(unittest.TestCase):
             self.assertEqual(self.s6.size, 1)
             self.assertEqual(self.s6.id, 89)
 
+class TestFileFunctions(unittest.TestCase):
+    def test_0(self):
+        self.s = Square(3)
+        self.assertEqual(self.s.save_to_file(None), '[]')
+        self.assertEqual(Square.load_from_file(), [])
+
 
 if __name__ == '__main__':
     unittest.main()
