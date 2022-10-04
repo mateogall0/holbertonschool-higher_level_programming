@@ -40,6 +40,7 @@ class Base:
                     j += 1
                 s += ']'
             f.write(s)
+        return s
 
     @staticmethod
     def from_json_string(json_string):
