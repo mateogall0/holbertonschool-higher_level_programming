@@ -1,3 +1,3 @@
 -- task 0
 -- show all
-SHOW
+SHOW ALL
