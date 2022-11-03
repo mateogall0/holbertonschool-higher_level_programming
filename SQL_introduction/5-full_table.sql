@@ -1,2 +1,2 @@
 -- show full description
-SELECT * FROM first_table
+SHOW TABLE 1first_table
