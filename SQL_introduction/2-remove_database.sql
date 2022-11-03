@@ -1,2 +1,2 @@
 -- Delete
-DROP DATABASE 
+DROP DATABASE hbtn_0c_0 
