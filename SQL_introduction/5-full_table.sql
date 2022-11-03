@@ -1,2 +1,2 @@
 -- show full description
-SHOW TABLE first_table
+SHOW FULL TABLE first_table;
