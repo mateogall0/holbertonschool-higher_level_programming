@@ -1,2 +1,2 @@
 -- show full description
-SHOW first_table;
+SHOW TABLES first_table;
