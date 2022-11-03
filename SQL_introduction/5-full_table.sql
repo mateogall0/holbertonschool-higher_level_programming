@@ -1,2 +1,2 @@
 -- show full description
-DESC * FROM first_table;
+DESC first_table;
