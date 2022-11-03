@@ -1,5 +1,5 @@
 -- inster a new row
-INSTER INTO first_table(id, name);
+INSTER INTO first_table(id, name)
 VALUES(
     89,i
     "Best School"
