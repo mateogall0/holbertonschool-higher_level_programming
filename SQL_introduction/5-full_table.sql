@@ -1,2 +1,2 @@
 -- show full description
-DESC first_table;
+SHOW TABLES LIKE first_table;
