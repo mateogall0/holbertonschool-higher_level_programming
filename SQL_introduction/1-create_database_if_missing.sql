@@ -1,7 +1,2 @@
 -- Create database
-BEGIN TRY
-    CREATE DATABASE "hbtn_0c_0";
-END TRY
-BEGIN CATCH
-    ;
-END CATHC
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0
