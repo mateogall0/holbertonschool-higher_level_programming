@@ -1,2 +1,2 @@
 -- show full description
-SHOW FULL FROM first_table;
+SHOW FULL TABLE LIKE "first_table";
