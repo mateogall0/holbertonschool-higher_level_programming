@@ -2,4 +2,4 @@
 --SELECT id AS ca FROM states WHERE name="California";
 --SELECT * FROM cities WHERE state_id=ca
 
-SELECT * FROM cities WHERE state_id=(id FROM states WHERE name="California")
+SELECT * FROM cities WHERE state_id=1
