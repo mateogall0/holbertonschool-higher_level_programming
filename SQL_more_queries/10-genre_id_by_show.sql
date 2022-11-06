@@ -1,4 +1,5 @@
 -- databse dump
 SELECT tv_shows.title, tv_show_genres.genre_id
 FROM tv_shows, tv_show_genres
-ORDER BY tv_shows.title, tv_show_genres.genre_id ASC
+ORDER BY tv_shows.title, tv_show_genres.genre_id
+GROUP BY tv_shows.title, tv_show_genres.genre_id ASC
