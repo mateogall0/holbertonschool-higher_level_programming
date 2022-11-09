@@ -13,7 +13,9 @@ if __name__ == "__main__":
                          passwd=sys.argv[2],
                          db=sys.argv[3])
     c = db.cursor()
-    c.execute('SELECT * FROM states WHERE name = "{}" ORDER BY states.id'.format(sys.argv[4]))
-    row = c.fetchone()
-    print(row)
+    s = 'SELECT * FROM states WHERE name = "{}"'.format(sys.argv[4])
+    c.execute(s)
+    rows = c.fetchall()
+    for row in rows:
+        print(row)
     db.close()
