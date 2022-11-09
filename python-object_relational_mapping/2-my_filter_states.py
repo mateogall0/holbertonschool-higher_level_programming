@@ -5,7 +5,7 @@ import sys
 import MySQLdb
 
 if __name__ == "__main__":
-    if len(sys.argv) < 5:
+    if len(sys.argv) < 4:
         exit()
     db = MySQLdb.connect(host="localhost",
                          port=3306,
@@ -13,9 +13,7 @@ if __name__ == "__main__":
                          passwd=sys.argv[2],
                          db=sys.argv[3])
     c = db.cursor()
-    c.execute("SELECT * FROM states ORDER BY states.id")
-    rows = c.fetchall()
-    for row in rows:
-        if row[1] == sys.argv[4]:
-            print(row)
+    c.execute('SELECT * FROM states WHERE name = "{}" ORDER BY states.id'.format(sys.argv[4]))
+    row = c.fetchone()
+    print(row)
     db.close()
