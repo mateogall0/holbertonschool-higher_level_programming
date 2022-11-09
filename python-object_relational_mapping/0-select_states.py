@@ -14,7 +14,7 @@ if __name__ == "__main__":
                          db=sys.argv[3])
     c = db.cursor()
     c.execute("SELECT * FROM states ORDER BY states.id")
-    row = c.fetchone()
-    for row in c:
+    rows = c.fetchall()
+    for row in rows:
         print(row)
     db.close()
