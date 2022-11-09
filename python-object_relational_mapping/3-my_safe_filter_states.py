@@ -14,7 +14,7 @@ if __name__ == "__main__":
                          db=sys.argv[3])
     with db.cursor() as c:
         s = 'SELECT * FROM states WHERE name LIKE "{}"'.format(sys.argv[4])
-        c.execute(s)
+        c.execute(s), (sys.argv[1], sys.argv[2])
         rows = c.fetchall()
         for row in rows:
             if row[1] == sys.argv[4]:
