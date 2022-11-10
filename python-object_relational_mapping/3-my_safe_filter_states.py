@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     c = db.cursor()
     c.execute("""SELECT * FROM states WHERE BINARY \
-              states.name = %s""", (sys.argv[4]))
+              states.name = %s""", (sys.argv[4],))
     rows = c.fetchall()
     for row in rows:
         print(row)
