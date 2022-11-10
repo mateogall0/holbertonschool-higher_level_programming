@@ -13,12 +13,11 @@ if __name__ == "__main__":
                              user=sys.argv[1],
                              passwd=sys.argv[2],
                              db=sys.argv[3])
-    except:
+    except Exception:
         exit()
 
     c = db.cursor()
-    s = 'SELECT * FROM states WHERE name LIKE "{}";'.format(sys.argv[4])
-    c.execute(s)
+    c.execute("""SELECT * FROM states WHERE name LIKE '{}';""".format(sys.argv[4]))
     rows = c.fetchall()
     for row in rows:
         if row[1] == sys.argv[4]:
