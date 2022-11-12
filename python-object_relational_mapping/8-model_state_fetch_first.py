@@ -24,7 +24,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     ses = Session()
     try:
-        i = (ses.query(State).order_by(State.id).all())[0]
+        i = (ses.query(State).order_by(State.id)[0])
         print(f"{i.id}: {i.name}")
     except Exception:
         print('Nothing')
