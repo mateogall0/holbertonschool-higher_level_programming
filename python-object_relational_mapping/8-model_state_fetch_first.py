@@ -23,7 +23,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     ses = Session()
-    for i in ses.query(State).order_by(State.id).all():
+    try:
+        i = (ses.query(State).order_by(State.id).all())[0]
         print(f"{i.id}: {i.name}")
-        break
+    except Exception:
+        print('Nothing')
     ses.close()
