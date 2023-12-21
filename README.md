@@ -24,5 +24,6 @@ All these projects where done using the programming languages Python, JavaScript
 
 ## About MySQL
 <p align="center">
-  <img src="" width="100"/>
+  <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-and-moodle-elearningworld-5.png" width="150"/>
 </p>
+<p>MySQL is a relational database management system that is widely used for managing and organizing structured data. It was originally developed by a swedish company called MySQL AB and realesed in 1995. MySQL is known for its performance, reliability, and ease of use, making it one of the most popular database systems in the world.</p>
