@@ -17,7 +17,7 @@ All these projects where done using the programming languages Python, JavaScript
 </p>
 <p>JavaScript follows the steps of Python, being a versatile, high-level, dynamically-typed programming language primarily used for front-end web development. Developed by Netscape, JavaScript was introduced in 1995 to make web pages interactive and dynamic. Over The years, it has evolved and expanded its rol, becoming a key language not only for client-side scripting but also for server-side development.</p>
 <p>JavaScript features helped the webpages become what they are nowadays, thanks to features such as object oriented programming, cross-browser compatibility, its popular frameworks like jQuery, React, etc; asyncronous programming, event-driven programming, and a lot more.</p>
-<p>JavaScript can also be used in a runtime environment for to execute its code outside of a web browser with tools like NodeJS</p>
+<p>JavaScript can also be used in a runtime environment for to execute its code outside of a web browser with tools like NodeJS.</p>
 
 ### About NodeJS
 <p>NodeJS allows developers to use JavaScript to write server-side applications, providing a platform for building scalable and high-performance network applications.</p>
